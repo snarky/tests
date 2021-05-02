@@ -1,4 +1,6 @@
 FROM debian:buster-slim
-ARG V=1
-RUN echo "BUILD TOTO:${V}"
-ENTRYPOINT ["echo", "toto"]
+ARG VERSION
+ENV VERSION=$VERSION
+RUN echo "BUILD TOTO:${VERSION}"
+COPY ./run.sh /run.sh
+ENTRYPOINT ["/run.sh"]
