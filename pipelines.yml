@@ -1,12 +1,9 @@
 - name: myFirstRepo
   type: GitRepo
   configuration:
-    # SCM integration where the repository is located
-    gitProvider: {{ Values.myRepo.gitProvider }}
-    # Repository path, including org name/repo name
-    path: {{ Values.myRepo.path }} #manishas-jfrog/jfrog-pipelines-hello-world    # replace with your repository name
+    gitProvider: test
+    path: snarky/tests 
     branches:
-      # Specifies which branches will trigger dependent steps
       include: main
       
 pipelines:
