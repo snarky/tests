@@ -1,11 +1,5 @@
 version: 2.1
 jobs:
   build:
-    machine: true
-    steps:
-    - checkout
-    # build and run
-    - run: |
-        docker build -t circleci-snarky/test:1 .
-        docker run circleci-snarky/test:1 .
-        docker run --rm bcinteractive/php-fpm:7.4.18 php --version
+    docker:
+    - image: snarky/tests:0.1.0
