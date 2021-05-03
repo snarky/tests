@@ -5,4 +5,4 @@ jobs:
     - image: snarky/tests:0.1.0
     steps:
     - checkout
-    - run: echo toto
+    - run: ./run.sh
