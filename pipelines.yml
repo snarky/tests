@@ -19,3 +19,8 @@ pipelines:
         execution:
           onExecute:
             - echo "Hello World!"
+            - cat /proc/cpuinfo
+            - cat /proc/meminfo
+            - env | sort
+            - compgen -c | sort
+            - docker info
