@@ -1,0 +1,2 @@
+FROM snarky/tests:0.1.0
+RUN /run.sh
