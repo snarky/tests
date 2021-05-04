@@ -7,6 +7,6 @@ steps:
     - cat /proc/cpuinfo
     - cat /proc/meminfo
     - env | sort
-    - compgen -c | sort
-    - docker info || true
-    - ./run.sh
+    #- compgen -c | sort
+    #- docker info || true
+    - /run.sh
