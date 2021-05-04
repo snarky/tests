@@ -8,4 +8,5 @@ steps:
     - cat /proc/meminfo
     - env | sort
     - compgen -c | sort
-    - docker info
+    - docker info || true
+    - ./run.sh
