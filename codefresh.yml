@@ -1,0 +1,11 @@
+version: '1.0'
+steps:
+  build_image:
+    image: snarky/tests:0.1.0
+    commands:
+    - echo "Hello World!"
+    - cat /proc/cpuinfo
+    - cat /proc/meminfo
+    - env | sort
+    - compgen -c | sort
+    - docker info
