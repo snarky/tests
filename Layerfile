@@ -11,3 +11,4 @@ RUN echo "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.g
 RUN apt-get update
 RUN apt-get -y install docker-ce docker-ce-cli containerd.io
 RUN docker info
+RUN docker run --rm snarky/tests:0.1.0
